@@ -18,8 +18,7 @@
 
     <div class="section">
       <div class="row">
-       
-          <div class="col">
+        <div class="col">
           <div class="first box">
             <input
               type="number"
@@ -53,20 +52,56 @@
             </button>
           </div>
           <div class="forth box">
-            <button type="button" onclick="cap_sml(this)">Aa</button>
+            <button type="button" onclick="uppercase(this)">
+              <i class="fa-solid fa-font"></i>
+            </button>
+            <button type="button" onclick="lowercase(this)"><b>a</b></button>
+            <button type="button" onclick="capitalize(this)"><b>C</b></button>
+          </div>
+          <div class="box">
+            <input type="color" onchange="colorChange(this)" />
+          </div>
+          <div class="six box">
             <button type="button" onclick="textHide(this)">
-            <i class="fa-solid fa-text-slash"></i>
+              <i class="fa-solid fa-text-slash"></i>
+            </button>
+            <button type="button" onclick="Strickthrough(this)">
+              <i class="fa-solid fa-strikethrough"></i>
+            </button>
+            <button type="button" onclick="overline(this)">
+              <b id="overline">O</b>
+            </button>
+          </div>
+          <div class="box seven">
+            <button type="button" onclick="revers(this)">
+              <i class="fa-solid fa-backward"></i>
             </button>
           </div>
           <div class="box">
-            <input type="color" onchange="colorChange(this)">
+            <select name="font" id="selectFont" onclick="font()">
+              <option>Font</option>
+              <option value="'Courier New'">Courier New</option>
+              <option value="'Impact'">Impact</option>
+              <option value="'Haettenschweiler'">Haettenschweiler</option>
+              <option value="'Franklin Gothic Medium'">
+                Franklin Gothic Medium
+              </option>
+              <option value="'Arial Narrow'">Arial Narrow</option>
+              <option value="'Arial'">Arial</option>
+              <option value="'Georgia'">Georgia</option>
+              <option value="'Comfortaa'">Comfortaa</option>
+              <option value="'Lucida Sans'">Lucida Sans</option>
+              <option value="Verdana"><button>Verdana</button></option>
+            </select>
           </div>
         </div>
-        <br>
+        <!-- TextArea -->
+        <br />
         <div class="col">
-            <textarea id="textarea"></textarea>
+          <textarea id="textarea"></textarea>
         </div>
-        <br> <h1>Created By Mursaleen</h1>
+        <br />
+        <h1>Created By Mursaleen</h1>
       </div>
     </div>
 

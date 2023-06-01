@@ -1,10 +1,12 @@
 
 let textarea = document.getElementById('textarea');
 
+
 function fontSize(e) {
     let value = e.value;
     textarea.style.fontSize = value + "px";
 }
+
 
 
 function bold(e) {
@@ -59,13 +61,38 @@ function textHide(e) {
     textarea.value = "";
 }
 
-function cap_sml(e) {
-    if (textarea.style.textTransform == "uppercase") {
-        textarea.style.textTransform = "lowercase";
+function Strickthrough(e) {
+    if (textarea.style.textDecoration == "line-through") {
+        textarea.style.textDecoration = "none"
     }
     else {
-        textarea.style.textTransform = "uppercase";
+        textarea.style.textDecoration = "line-through"
     }
+}
+
+
+function overline(e) {
+    if (textarea.style.textDecoration == "overline") {
+        textarea.style.textDecoration = "none"
+    }
+    else {
+        textarea.style.textDecoration = "overline"
+    }
+}
+
+
+
+
+function uppercase(e) {
+    textarea.style.textTransform = "uppercase";
+}
+
+function lowercase(e) {
+    textarea.style.textTransform = "lowercase";
+}
+
+function capitalize(e) {
+    textarea.style.textTransform = "capitalize";
 }
 
 function colorChange(e) {
@@ -73,11 +100,18 @@ function colorChange(e) {
     textarea.style.color = color;
 }
 
-window.addEventListener('load'), ()=>{
-    textarea.value = "";
+
+function revers(e) {
+    let splite = textarea.value.split("").reverse().join("");
+    textarea.value = splite;
 }
 
 
-
+function font(e){
+   let selectElement = document.querySelector('#selectFont');
+   output = selectElement.value;
+   textarea.style.fontFamily = output;
+   console.log(output);
+}
 
 
