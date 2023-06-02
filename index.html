@@ -14,8 +14,7 @@
     />
   </head>
   <body>
-    <!-- Navbar -->
-
+    <!-- Font Size -->
     <div class="section">
       <div class="row">
         <div class="col">
@@ -29,54 +28,84 @@
               onchange="fontSize(this)"
             />
           </div>
+
+          <!-- Bold -->
           <div class="second box">
             <button type="button" onclick="bold(this)">
               <i class="fa-solid fa-bold"></i>
             </button>
+            <!-- Italic-->
+
             <button type="button" onclick="italic(this)">
               <i class="fa-solid fa-italic"></i>
             </button>
+
+            <!-- Underline -->
             <button type="button" onclick="underline(this)">
               <i class="fa-solid fa-underline"></i>
             </button>
           </div>
+
+          <!-- Align Left -->
           <div class="third box">
             <button type="button" onclick="alignLeft(this)">
               <i class="fa-solid fa-align-left"></i>
             </button>
+
+            <!-- Align Center -->
             <button type="button" onclick="alignCenter(this)">
               <i class="fa-solid fa-align-center"></i>
             </button>
+
+            <!-- Align Right -->
             <button type="button" onclick="alignRight(this)">
               <i class="fa-solid fa-align-right"></i>
             </button>
           </div>
+
+          <!-- Upercase -->
           <div class="forth box">
             <button type="button" onclick="uppercase(this)">
               <i class="fa-solid fa-font"></i>
             </button>
+
+            <!-- Lowercase -->
             <button type="button" onclick="lowercase(this)"><b>a</b></button>
+
+            <!-- Capitalize -->
             <button type="button" onclick="capitalize(this)"><b>C</b></button>
           </div>
+
+          <!-- Color Change -->
           <div class="box">
             <input type="color" onchange="colorChange(this)" />
           </div>
+
+          <!-- Remove Text -->
           <div class="six box">
             <button type="button" onclick="textHide(this)">
               <i class="fa-solid fa-text-slash"></i>
             </button>
+
+            <!-- Strickthrough -->
             <button type="button" onclick="Strickthrough(this)">
               <i class="fa-solid fa-strikethrough"></i>
             </button>
+
+            <!-- Overline -->
             <button type="button" onclick="overline(this)">
               <b id="overline">O</b>
             </button>
           </div>
+
+          <!-- Revers -->
           <div class="box seven">
             <button type="button" onclick="revers(this)">
               <i class="fa-solid fa-backward"></i>
             </button>
           </div>
+
+          <!-- Font Style -->
           <div class="box">
             <select name="font" id="selectFont" onclick="font()">
               <option>Font</option>
@@ -95,6 +124,7 @@
             </select>
           </div>
         </div>
+
         <!-- TextArea -->
         <br />
         <div class="col">
